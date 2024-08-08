@@ -6,8 +6,8 @@ module.exports = defineConfig({
     reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
       charts: true,
-      reportTitle: 'Projeto do curso de Cypress',
-      reportPageTitle: 'Projeto do curso de Cypress',
+      reportTitle: 'Projetinho do curso de Cypress',
+      reportPageTitle: 'Projetinho do curso de Cypress',
 
     },
     baseUrl: "https://automationpratice.com.br/",
