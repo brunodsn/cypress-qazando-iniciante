@@ -21,7 +21,7 @@ on:
 
           # exemplo de execução no terminal
           - name: instalar dependencias do projeto
-            run: npx cypress open
+            run: npm start
 
           # execução e configuração do projeto
           - name: Cypress run
