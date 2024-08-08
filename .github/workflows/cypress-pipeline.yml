@@ -4,7 +4,7 @@ name: Run Basic Testes
 # em que momento será executada
 on:
   pull_request:
-    braches: [master]
+    braches: [main]
 
     jobs:
     # o que vai ser feito nessa pipeline
@@ -21,7 +21,7 @@ on:
 
           # exemplo de execução no terminal
           - name: instalar dependencias do projeto
-            run: npm start
+            run: npx cypress open
 
           # execução e configuração do projeto
           - name: Cypress run
@@ -29,4 +29,4 @@ on:
             with:
               record: true
             env:
-            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY}}
+            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
