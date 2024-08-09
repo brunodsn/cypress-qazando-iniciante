@@ -16,7 +16,7 @@ on:
         # passo a passo para rodar os testes
         steps:
         # clone do projeto
-        - name: Checkout/Clone do projeto
+        - name: Checkout
           uses: actions/checkout@v4
 
           # exemplo de execução no terminal
