@@ -5,6 +5,7 @@ name: Run Basic Tests
 on:
   pull_request:
     branches: [main]
+
 jobs:
   # o que vai ser feito nessa pipeline
   # só teremos um job: rodar os testes
@@ -30,10 +31,10 @@ jobs:
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
-
-          #uptload do relatorio do mocha
-       - name: upload relatório
-         uses: actions/upload-artifact@v4
-         with:
+      # upload do relatório do mocha
+      - name: upload relatório
+        uses: actions/upload-artifact@v4
+        with:
           name: Relatório
           path: cypress/reports/html
+
